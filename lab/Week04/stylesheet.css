@@ -1,0 +1,62 @@
+body {
+  background: #487279;
+  font-family: "Noto Serif", serif;
+  height: 100%;
+}
+
+a {
+  color: #3a362b;
+  text-decoration: none;
+}
+
+.paper {
+  position: relative;
+  width: 800px;
+
+  border-radius: 2px;
+  border-top: 1px dashed rgba(0, 0, 0, 0.5);
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.5);
+  margin: 20px auto;
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  background: #dfdfdf;
+  
+
+
+
+ 
+  -webkit-box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.75);
+}
+
+.titleDiv {
+  position: relative;
+  background-image: url("http://www.jarrodyellets.com/images/globe.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.title {
+  text-align: center;
+  font-size: 4em;
+  text-align: center;
+  font-family: "Gravitas One", cursive;
+  margin-bottom: 10px;
+  line-height: 2;
+  text-shadow: 4px 3px 0px #cccdbf, 9px 8px 0px rgba(0, 0, 0, 0.15);
+}
+
+.topHr {
+  border: 3px solid #3a362b;
+  margin-top: 0;
+  margin-bottom: 3px;
+}
+
+.bottomHr {
+  border: 1px solid #3a362b;
+  margin: 0;
+}
+
