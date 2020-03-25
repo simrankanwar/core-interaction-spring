@@ -4,13 +4,16 @@
 	<style>
 
 		body {
-  margin: 60px auto;
-  background: #F5F5F7;
+  margin: 90px 750px ;
+  background-color: black;
+   color:#CAE1F9;
+     font-size:10px;
+
 }
 
 .colorWheel {
-  height: 200px;
-  width: 100px;
+  height: 400px;
+  width: 500px;
   margin: 0 auto;
   position: relative;
   -webkit-transform-origin: 50px 150px;
@@ -23,6 +26,7 @@
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
+  animation: spin 5s infinite linear;
 
 }
 .colorWheel span {
@@ -155,8 +159,8 @@
 }
 
 .colorWheel2 {
-  height:200px;
-  width: 800px;
+  height:400px;
+  width: 700px;
   margin: 0 auto;
   position: relative;
   -webkit-transform-origin: 50px 150px;
@@ -169,6 +173,7 @@
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
+  animation: spin 5s infinite linear;
 
 }
 
@@ -298,7 +303,7 @@
 
 .colorWheel3 {
   height: 600px;
-  width: 200px;
+  width: 300px;
   margin: 0 auto;
   position: relative;
   -webkit-transform-origin: 50px 150px;
@@ -311,6 +316,7 @@
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
+  animation: spin 5s infinite linear;
 
 }
 .colorWheel3 span {
@@ -437,6 +443,15 @@
   background: #ffffff;
 }
 
+@keyframes spin {
+    
+    to {
+      transform: rotate(180deg);
+
+    }
+
+
+
 
 
 
@@ -447,7 +462,10 @@
 
 <body>
 
-	<div class="colorWheel">
+
+  
+
+	 <a href="pages/colorWheel.html"><div class="colorWheel">
   <span class="point color01"></span>
   <span class="point color02"></span>
   <span class="point color03"></span>
@@ -458,11 +476,15 @@
   <span class="point color08"></span>
   <span class="point color09"></span>
   <span class="point color10"></span>
-</a></div>
+</div> </a>
 
 
 
-	<div class="colorWheel2">
+
+
+
+
+  <a href="pages/colorWheel2.html"><div class="colorWheel2">
   <span class="point color01"></span>
   <span class="point color02"></span>
   <span class="point color03"></span>
@@ -473,9 +495,11 @@
   <span class="point color08"></span>
   <span class="point color09"></span>
   <span class="point color10"></span>
-</a></div>
+</div>
 
-<div class="colorWheel3">
+
+
+ <a href="pages/colorWheel3.html"><div class="colorWheel3">
   <span class="point color01"></span>
   <span class="point color02"></span>
   <span class="point color03"></span>
@@ -486,7 +510,12 @@
   <span class="point color08"></span>
   <span class="point color09"></span>
   <span class="point color10"></span>
-</a></div>
+</div>
+
+
+<script>
+  
+</script>
 
 
 	

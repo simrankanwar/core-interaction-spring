@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    
+  </title>
+
+  <style>
+
+
+
+    body{
+      background-color:black;
+      color:#CAE1F9;
+      text-align:center;
+      font-size:30px;
+    
+      
+    }
+
+  
+    {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Helvetica;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+
+.column {
+  -ms-flex: 25%; 
+  flex: 25%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.column div {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  position: relative;
+}
+
+.item p {
+
+        position: absolute;
+        z-index: 2;
+
+        top: 10%;
+  
+        left: 50%;
+        transform: translateX(-50%);
+
+     
+        opacity: 0;
+
+
+        background-color: lightblue;
+      }
+
+  
+      .item:hover p {
+        opacity: 5;
+      
+        transition: 0.3s ease-in-out all;
+      }
+
+      @media screen and (max-width: 800px) {
+        .column {
+          -ms-flex: 50%;
+          flex: 50%;
+          max-width: 50%;
+        }
+      }
+
+    
+      @media screen and (max-width: 600px) {
+        .column {
+          -ms-flex: 100%;
+          flex: 100%;
+          max-width: 100%;
+        }
+      }
+
+      p{
+        color:black;
+      }
+
+ </style>
+  </head>
+  <body>
+    <h1> COLOR CODED ARCHIVE</h1>
+    <div class="row">
+      <div class="column">
+     
+        <div class="item">
+          <p>Perisan Blue</p>
+          <img src="../images/persianblue.jpg" style="width:100%" />
+        </div>
+
+        <div class="item">
+          <p>Powder Blue</p>
+          <img src="../images/powderblue.jpg" style="width:100%" />
+        </div>
+        <div class="item">
+          <p>Royal Blue</p>
+          <img src="../images/royalblue.jpg" style="width:100%" />
+        </div>
+        <div class="item">
+          <p>Sky Blue</p>
+          <img src="../images/skyblue.jpg" style="width:100%" />
+        </div>
+       <div class="item">
+          <p>Sapphire</p>
+          <img src="../images/sapphire.gif" style="width:100%" />
+        </div>
+        <div class="item">
+          <p>Zaffre Blue</p>
+          <img src="../images/zaffreblue.png" style="width:100%" />
+        </div>
+      </div>
+      <div class="column">
+        <div class="item">
+          <p>Soft Blue</p>
+          <img src="../images/softblue.jpg" style="width:100%" />
+        </div>
+        <div class="item">
+          <p>Teal</p>
+          <img src="../images/teal.jpg" style="width:100%" />
+        </div>
+        <div class="item">
+          <p>Turquoise</p>
+          <img src="../images/turqoiuse.jpg" style="width:100%" />
+        </div>
+        <div class="item">
+          <p>Violet</p>
+          <img src="../images/violet.jpg" style="width:100%" />
+        </div>
+      </div>
+    </div>
+
+    <a href="../index.html"> Back to Color Wheel</a>
+  </body>
+</html>
+  
+

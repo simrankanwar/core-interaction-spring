@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+
+    <style>
+      body {
+        background-color: black;
+        text-align: center;
+        font-size: 30px;
+        box-sizing: border-box;
+        color:#CAE1F9;
+      }
+
+      body {
+        margin: 0;
+        font-family: Helvetica;
+      }
+
+      .header {
+        text-align: center;
+        padding: 32px;
+      }
+
+      .row {
+        display: -ms-flexbox; /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE10 */
+        flex-wrap: wrap;
+        padding: 0 4px;
+      }
+
+      /* Create four equal columns that sits next to each other */
+      .column {
+        -ms-flex: 25%; /* IE10 */
+        flex: 25%;
+        max-width: 50%;
+        padding: 0 4px;
+      }
+
+      /* andrew styling help */
+      .column div {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+        /* position relative allows position:absolute children to work as expected (the p text below) */
+        position: relative;
+      }
+
+      .item p {
+        /* position absolute pulls text out of normal flow and z-index > 1 ensures it sit on top */
+        position: absolute;
+        z-index: 2;
+        /* use top, left, right, bottom to position along with transforms when position: absolute */
+        top: 10%;
+        /* horizontal centering in position:absolute uses a left and translate */
+        left: 50%;
+        transform: translateX(-50%);
+
+        /* by default, it should be invisible */
+        opacity: 0;
+
+        /* temporary styling to make sure you can see it. Style it better than this! 😅 */
+        background-color: white;
+      }
+
+      /* when hovering on any item, the containing p tag becomes visible */
+      .item:hover p {
+        opacity: 1;
+        /* you can add transitions and animations here for smooth effects like this: */
+        transition: 0.3s ease-in-out all;
+      }
+
+      /* Responsive layout - makes a two column-layout instead of four columns */
+      @media screen and (max-width: 800px) {
+        .column {
+          -ms-flex: 50%;
+          flex: 50%;
+          max-width: 50%;
+        }
+      }
+
+      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .column {
+          -ms-flex: 100%;
+          flex: 100%;
+          max-width: 100%;
+        }
+      }
+
+      p{
+        color:bla;
+      }
+    </style>
+  </head>
+  <body>
+    <h1> COLOR CODED ARCHIVE</h1>
+    <div class="row">
+      <div class="column">
+        <!-- andrew html help -->
+        <!-- adding a div container with a class of item to contain all text + img for each item -->
+        <div class="item">
+          <p>some text to display on hover</p>
+          <img src="../images/lawngreen.jpg" style="width:100%" />
+        </div>
+
+        <div class="item">
+          <p>some more text to display on hover</p>
+          <img src="../images/lightblue.jpg" style="width:100%" />
+        </div>
+        <div class="item">
+          <p>some more text to display on hover</p>
+          <img src="../images/lightcyan.jpg" style="width:100%" />
+        </div>
+        <div class="item">
+          <p>some more text to display on hover</p>
+          <img src="../images/limegreen.jpg" style="width:100%" />
+        </div>
+      </div>
+      <div class="column">
+        <div class="item">
+          <p>some more text to display on hover</p>
+          <img src="../images/midnightblue.png" style="width:100%" />
+        </div>
+        <div class="item">
+          <p>some more text to display on hover</p>
+          <img src="../images/mintgreen.jpg" style="width:100%" />
+        </div>
+        <div class="item">
+          <p>some more text to display on hover</p>
+          <img src="../images/navy.png" style="width:100%" />
+        </div>
+        <div class="item">
+          <p>some more text to display on hover</p>
+          <img src="../images/oceanblue.jpg" style="width:100%" />
+        </div>
+        <div class="item">
+          <p>some more text to display on hover</p>
+          <img src="../images/orchid.png" style="width:100%" />
+        </div>
+        <div class="item">
+          <p>some more text to display on hover</p>
+          <img src="../images/palegreen.jpg" style="width:100%" />
+        </div>
+      </div>
+    </div>
+
+    <a href="../index.html"> Back to Color Wheel</a>
+  </body>
+</html>
