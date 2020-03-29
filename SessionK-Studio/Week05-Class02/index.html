@@ -1,524 +1,551 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<style>
+    <style>
+            body {
+            margin: auto;
+            width: 40%;
+            padding:10px;
 
-		body {
-  margin: 90px 750px ;
-  background-color: black;
-   color:#CAE1F9;
-     font-size:10px;
+            font-family: papyrus;
+            font-size: 50px;
+            color: #CAE1F9;
+            animation: mymove 5s infinite;
 
-}
-
-.colorWheel {
-  height: 400px;
-  width: 500px;
-  margin: 0 auto;
-  position: relative;
-  -webkit-transform-origin: 50px 150px;
-  -moz-transform-origin: 50px 150px;
-  -ms-transform-origin: 50px 150px;
-  -o-transform-origin: 50px 150px;
-  transform-origin: 50px 150px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-  animation: spin 5s infinite linear;
-
-}
-.colorWheel span {
-  position: absolute;
-
-  border-style: solid;
-  border-width: 150px 50px;
-  box-sizing: border-box;
-}
-
-.colorWheel span.color01 {
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  border-color: #7fffd4 transparent transparent transparent;
-
-
-}
-
-/*.colorWheel span:hover {
-	opacity: 20%;
+        }
+        
+        @keyframes mymove {
+            0% {
+                top: 0px;
+                left: 0px;
+                background: #77aaff;
+            }
+            25% {
+                top: 0px;
+                left: 100px;
+                background: #99ccff;
+            }
+            50% {
+                top: 100px;
+                left: 100px;
+                background: #bbeeff;
+            }
+            75% {
+                top: 100px;
+                left: 0px;
+                background: #5588ff;
+            }
+            100% {
+                top: 0px;
+                left: 0px;
+                background: #3366ff;
+            }
+        }
+        
+        .colorWheel {
+            margin: auto;
+            width: 500%;
+            -webkit-transform-origin: 50px 150px;
+            -moz-transform-origin: 50px 150px;
+            -ms-transform-origin: 50px 150px;
+            -o-transform-origin: 50px 150px;
+            transform-origin: 50px 150px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+            animation: spin 7s infinite linear;
+        }
+        
+        .colorWheel span {
+            position: absolute;
+            border-style: solid;
+            border-width: 150px 50px;
+            box-sizing: border-box;
+        }
+        
+        .colorWheel span.color01 {
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+            border-color: #7fffd4 transparent transparent transparent;
+        }
+        /*.colorWheel span:hover {
+  opacity: 20%;
 }*/
+        
+        .colorWheel span.color02 {
+            -webkit-transform: rotate(36deg);
+            -moz-transform: rotate(36deg);
+            -ms-transform: rotate(36deg);
+            -o-transform: rotate(36deg);
+            transform: rotate(36deg);
+            border-color: #89CFF0 transparent transparent transparent;
+        }
+        
+        .colorWheel span.color03 {
+            -webkit-transform: rotate(72deg);
+            -moz-transform: rotate(72deg);
+            -ms-transform: rotate(72deg);
+            -o-transform: rotate(72deg);
+            transform: rotate(72deg);
+            border-color: #99BADD transparent transparent transparent;
+        }
+        
+        .colorWheel span.color04 {
+            -webkit-transform: rotate(108deg);
+            -moz-transform: rotate(108deg);
+            -ms-transform: rotate(108deg);
+            -o-transform: rotate(108deg);
+            transform: rotate(108deg);
+            border-color: #0047ab transparent transparent transparent;
+        }
+        
+        .colorWheel span.color05 {
+            -webkit-transform: rotate(144deg);
+            -moz-transform: rotate(144deg);
+            -ms-transform: rotate(144deg);
+            -o-transform: rotate(144deg);
+            transform: rotate(144deg);
+            border-color: #00ffff transparent transparent transparent;
+        }
+        
+        .colorWheel span.color06 {
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+            transform: rotate(180deg);
+            border-color: #006400 transparent transparent transparent;
+        }
+        
+        .colorWheel span.color07 {
+            -webkit-transform: rotate(216deg);
+            -moz-transform: rotate(216deg);
+            -ms-transform: rotate(216deg);
+            -o-transform: rotate(216deg);
+            transform: rotate(216deg);
+            border-color: #50c878 transparent transparent transparent;
+        }
+        
+        .colorWheel span.color08 {
+            -webkit-transform: rotate(252deg);
+            -moz-transform: rotate(252deg);
+            -ms-transform: rotate(252deg);
+            -o-transform: rotate(252deg);
+            transform: rotate(252deg);
+            border-color: #4f7942 transparent transparent transparent;
+        }
+        
+        .colorWheel span.color09 {
+            -webkit-transform: rotate(288deg);
+            -moz-transform: rotate(288deg);
+            -ms-transform: rotate(288deg);
+            -o-transform: rotate(288deg);
+            transform: rotate(288deg);
+            border-color: #4b0082 transparent transparent transparent;
+        }
+        
+        .colorWheel span.color10 {
+            -webkit-transform: rotate(324deg);
+            -moz-transform: rotate(324deg);
+            -ms-transform: rotate(324deg);
+            -o-transform: rotate(324deg);
+            transform: rotate(324deg);
+            border-color: #7cfc00 transparent transparent transparent;
+        }
+        
+        .colorWheel:before {
+            content: "";
+            width: 300px;
+            height: 300px;
+            overflow: hidden;
+            position: absolute;
+            top: -30px;
+            left: -130px;
+            border-radius: 100%;
+            border: 30px solid #ffffff;
+            z-index: 100;
+        }
+        
+        .colorWheel:after {
+            content: "";
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+            position: absolute;
+            top: 100px;
+            left: 0px;
+            border-radius: 100%;
+            background: #ffffff;
+        }
+        
+        .colorWheel2 {
+            height: 300px;
+            width: 0px;
+            margin: 10px auto;
+            position: relative;
+            -webkit-transform-origin: 50px 150px;
+            -moz-transform-origin: 50px 150px;
+            -ms-transform-origin: 50px 150px;
+            -o-transform-origin: 50px 150px;
+            transform-origin: 50px 150px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+            animation: spin 7s infinite linear;
+        }
+        
+        .colorWheel2 span {
+            position: absolute;
+            border-style: solid;
+            border-width: 150px 50px;
+            box-sizing: border-box;
+        }
+        
+        .colorWheel2 span.color01 {
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+            border-color: #add8e6 transparent transparent transparent;
+        }
+        
+        .colorWheel2 span.color02 {
+            -webkit-transform: rotate(36deg);
+            -moz-transform: rotate(36deg);
+            -ms-transform: rotate(36deg);
+            -o-transform: rotate(36deg);
+            transform: rotate(36deg);
+            border-color: #e0ffff transparent transparent transparent;
+        }
+        
+        .colorWheel2 span.color03 {
+            -webkit-transform: rotate(72deg);
+            -moz-transform: rotate(72deg);
+            -ms-transform: rotate(72deg);
+            -o-transform: rotate(72deg);
+            transform: rotate(72deg);
+            border-color: #32cd32 transparent transparent transparent;
+        }
+        
+        .colorWheel2 span.color04 {
+            -webkit-transform: rotate(108deg);
+            -moz-transform: rotate(108deg);
+            -ms-transform: rotate(108deg);
+            -o-transform: rotate(108deg);
+            transform: rotate(108deg);
+            border-color: #191970 transparent transparent transparent;
+        }
+        
+        .colorWheel2 span.color05 {
+            -webkit-transform: rotate(144deg);
+            -moz-transform: rotate(144deg);
+            -ms-transform: rotate(144deg);
+            -o-transform: rotate(144deg);
+            transform: rotate(144deg);
+            border-color: #98ff98 transparent transparent transparent;
+        }
+        
+        .colorWheel2 span.color06 {
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+            transform: rotate(180deg);
+            border-color: #000080 transparent transparent transparent;
+        }
+        
+        .colorWheel2 span.color07 {
+            -webkit-transform: rotate(216deg);
+            -moz-transform: rotate(216deg);
+            -ms-transform: rotate(216deg);
+            -o-transform: rotate(216deg);
+            transform: rotate(216deg);
+            border-color: #0000ff transparent transparent transparent;
+        }
+        
+        .colorWheel2 span.color08 {
+            -webkit-transform: rotate(252deg);
+            -moz-transform: rotate(252deg);
+            -ms-transform: rotate(252deg);
+            -o-transform: rotate(252deg);
+            transform: rotate(252deg);
+            border-color: #da70d6 transparent transparent transparent;
+        }
+        
+        .colorWheel2 span.color09 {
+            -webkit-transform: rotate(288deg);
+            -moz-transform: rotate(288deg);
+            -ms-transform: rotate(288deg);
+            -o-transform: rotate(288deg);
+            transform: rotate(288deg);
+            border-color: #98fb98 transparent transparent transparent;
+        }
+        
+        .colorWheel2 span.color10 {
+            -webkit-transform: rotate(324deg);
+            -moz-transform: rotate(324deg);
+            -ms-transform: rotate(324deg);
+            -o-transform: rotate(324deg);
+            transform: rotate(324deg);
+            border-color: #4f7942 transparent transparent transparent;
+            /*fern green*/
+        }
+        
+        .colorWheel2:before {
+            content: "";
+            width: 300px;
+            height: 300px;
+            overflow: hidden;
+            position: absolute;
+            top: -30px;
+            left: -130px;
+            border-radius: 100%;
+            border: 30px solid #ffffff;
+            z-index: 100;
+        }
+        
+        .colorWheel2:after {
+            content: "";
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+            position: absolute;
+            top: 100px;
+            left: 0px;
+            border-radius: 100%;
+            background: #ffffff;
+        }
+        
+        .colorWheel3 {
+            height: 300px;
+            width: 300px;
+            margin: 10px auto;
+            position: relative;
+            -webkit-transform-origin: 50px 150px;
+            -moz-transform-origin: 50px 150px;
+            -ms-transform-origin: 50px 150px;
+            -o-transform-origin: 50px 150px;
+            transform-origin: 50px 150px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+            animation: spin 7s infinite linear;
+        }
+        
+        .colorWheel3 span {
+            position: absolute;
+            border-style: solid;
+            border-width: 150px 50px;
+            box-sizing: border-box;
+        }
+        
+        .colorWheel3 span.color01 {
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+            border-color: #1c39bb transparent transparent transparent;
+        }
+        
+        .colorWheel3 span.color02 {
+            -webkit-transform: rotate(36deg);
+            -moz-transform: rotate(36deg);
+            -ms-transform: rotate(36deg);
+            -o-transform: rotate(36deg);
+            transform: rotate(36deg);
+            border-color: #b0e0e6 transparent transparent transparent;
+        }
+        
+        .colorWheel3 span.color03 {
+            -webkit-transform: rotate(72deg);
+            -moz-transform: rotate(72deg);
+            -ms-transform: rotate(72deg);
+            -o-transform: rotate(72deg);
+            transform: rotate(72deg);
+            border-color: #4169e1 transparent transparent transparent;
+        }
+        
+        .colorWheel3 span.color04 {
+            -webkit-transform: rotate(108deg);
+            -moz-transform: rotate(108deg);
+            -ms-transform: rotate(108deg);
+            -o-transform: rotate(108deg);
+            transform: rotate(108deg);
+            border-color: #0f52ba transparent transparent transparent;
+        }
+        
+        .colorWheel3 span.color05 {
+            -webkit-transform: rotate(144deg);
+            -moz-transform: rotate(144deg);
+            -ms-transform: rotate(144deg);
+            -o-transform: rotate(144deg);
+            transform: rotate(144deg);
+            border-color: #afeeee transparent transparent transparent;
+            /*soft blue*/
+        }
+        
+        .colorWheel3 span.color06 {
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+            transform: rotate(180deg);
+            border-color: #87ceeb transparent transparent transparent;
+        }
+        
+        .colorWheel3 span.color07 {
+            -webkit-transform: rotate(216deg);
+            -moz-transform: rotate(216deg);
+            -ms-transform: rotate(216deg);
+            -o-transform: rotate(216deg);
+            transform: rotate(216deg);
+            border-color: #008080 transparent transparent transparent;
+        }
+        
+        .colorWheel3 span.color08 {
+            -webkit-transform: rotate(252deg);
+            -moz-transform: rotate(252deg);
+            -ms-transform: rotate(252deg);
+            -o-transform: rotate(252deg);
+            transform: rotate(252deg);
+            border-color: #40e0d0 transparent transparent transparent;
+        }
+        
+        .colorWheel3 span.color09 {
+            -webkit-transform: rotate(288deg);
+            -moz-transform: rotate(288deg);
+            -ms-transform: rotate(288deg);
+            -o-transform: rotate(288deg);
+            transform: rotate(288deg);
+            border-color: #ee82ee transparent transparent transparent;
+        }
+        
+        .colorWheel3 span.color10 {
+            -webkit-transform: rotate(324deg);
+            -moz-transform: rotate(324deg);
+            -ms-transform: rotate(324deg);
+            -o-transform: rotate(324deg);
+            transform: rotate(324deg);
+            border-color: #0014A8 transparent transparent transparent;
+        }
+        
+        .colorWheel3:before {
+            content: "";
+            width: 300px;
+            height: 300px;
+            overflow: hidden;
+            position: absolute;
+            top: -30px;
+            left: -130px;
+            border-radius: 100%;
+            border: 30px solid #ffffff;
+            z-index: 100;
+        }
+        
+        .colorWheel3:after {
+            content: "";
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+            position: absolute;
+            top: 100px;
+            left: 0px;
+            border-radius: 100%;
+            background: #ffffff;
+        }
+        
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(359deg);
+            }
+            h1 {
+                text-align: center;
 
-.colorWheel span.color02 {
-  -webkit-transform: rotate(36deg);
-  -moz-transform: rotate(36deg);
-  -ms-transform: rotate(36deg);
-  -o-transform: rotate(36deg);
-  transform: rotate(36deg);
-  border-color: #89CFF0 transparent transparent transparent;
-}
-
-.colorWheel span.color03 {
-  -webkit-transform: rotate(72deg);
-  -moz-transform: rotate(72deg);
-  -ms-transform: rotate(72deg);
-  -o-transform: rotate(72deg);
-  transform: rotate(72deg);
-  border-color: #99BADD transparent transparent transparent;
-}
-
-.colorWheel span.color04 {
-  -webkit-transform: rotate(108deg);
-  -moz-transform: rotate(108deg);
-  -ms-transform: rotate(108deg);
-  -o-transform: rotate(108deg);
-  transform: rotate(108deg);
-  border-color: #0047ab transparent transparent transparent;
-}
-
-.colorWheel span.color05 {
-  -webkit-transform: rotate(144deg);
-  -moz-transform: rotate(144deg);
-  -ms-transform: rotate(144deg);
-  -o-transform: rotate(144deg);
-  transform: rotate(144deg);
-  border-color: #00ffff transparent transparent transparent;
-}
-
-.colorWheel span.color06 {
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  transform: rotate(180deg);
-  border-color: #006400 transparent transparent transparent;
-}
-
-.colorWheel span.color07 {
-  -webkit-transform: rotate(216deg);
-  -moz-transform: rotate(216deg);
-  -ms-transform: rotate(216deg);
-  -o-transform: rotate(216deg);
-  transform: rotate(216deg);
-  border-color: #50c878 transparent transparent transparent;
-}
-
-.colorWheel span.color08 {
-  -webkit-transform: rotate(252deg);
-  -moz-transform: rotate(252deg);
-  -ms-transform: rotate(252deg);
-  -o-transform: rotate(252deg);
-  transform: rotate(252deg);
-  border-color: #4f7942 transparent transparent transparent;
-}
-
-.colorWheel span.color09 {
-  -webkit-transform: rotate(288deg);
-  -moz-transform: rotate(288deg);
-  -ms-transform: rotate(288deg);
-  -o-transform: rotate(288deg);
-  transform: rotate(288deg);
-  border-color: #4b0082 transparent transparent transparent;
-}
-
-.colorWheel span.color10 {
-  -webkit-transform: rotate(324deg);
-  -moz-transform: rotate(324deg);
-  -ms-transform: rotate(324deg);
-  -o-transform: rotate(324deg);
-  transform: rotate(324deg);
-  border-color: #7cfc00 transparent transparent transparent;
-}
-
-.colorWheel:before {
-  content: "";
-  width: 300px;
-  height: 300px;
-  overflow: hidden;
-  position: absolute;
-  top: -30px;
-  left: -130px;
-  border-radius: 100%;
-  border: 30px solid #ffffff;
-  z-index: 100;
-}
-
-.colorWheel:after {
-  content: "";
-  width: 100px;
-  height: 100px;
-  overflow: hidden;
-  position: absolute;
-  top: 100px;
-  left: 0px;
-  border-radius: 100%;
-  background: #ffffff;
-}
-
-.colorWheel2 {
-  height:400px;
-  width: 700px;
-  margin: 0 auto;
-  position: relative;
-  -webkit-transform-origin: 50px 150px;
-  -moz-transform-origin: 50px 150px;
-  -ms-transform-origin: 50px 150px;
-  -o-transform-origin: 50px 150px;
-  transform-origin: 50px 150px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-  animation: spin 5s infinite linear;
-
-}
-
-.colorWheel2 span {
-  position: absolute;
-
-  border-style: solid;
-  border-width: 150px 50px;
-  box-sizing: border-box;
-}
-
-.colorWheel2 span.color01 {
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  border-color: #add8e6 transparent transparent transparent;
-}
-
-.colorWheel2 span.color02 {
-  -webkit-transform: rotate(36deg);
-  -moz-transform: rotate(36deg);
-  -ms-transform: rotate(36deg);
-  -o-transform: rotate(36deg);
-  transform: rotate(36deg);
-  border-color: #e0ffff transparent transparent transparent;
-}
-
-.colorWheel2 span.color03 {
-  -webkit-transform: rotate(72deg);
-  -moz-transform: rotate(72deg);
-  -ms-transform: rotate(72deg);
-  -o-transform: rotate(72deg);
-  transform: rotate(72deg);
-  border-color: #32cd32 transparent transparent transparent;
-}
-
-.colorWheel2 span.color04 {
-  -webkit-transform: rotate(108deg);
-  -moz-transform: rotate(108deg);
-  -ms-transform: rotate(108deg);
-  -o-transform: rotate(108deg);
-  transform: rotate(108deg);
-  border-color: #191970 transparent transparent transparent;
-}
-
-.colorWheel2 span.color05 {
-  -webkit-transform: rotate(144deg);
-  -moz-transform: rotate(144deg);
-  -ms-transform: rotate(144deg);
-  -o-transform: rotate(144deg);
-  transform: rotate(144deg);
-  border-color: #98ff98 transparent transparent transparent;
-}
-
-.colorWheel2 span.color06 {
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  transform: rotate(180deg);
-  border-color: #000080 transparent transparent transparent;
-}
-
-.colorWheel2 span.color07 {
-  -webkit-transform: rotate(216deg);
-  -moz-transform: rotate(216deg);
-  -ms-transform: rotate(216deg);
-  -o-transform: rotate(216deg);
-  transform: rotate(216deg);
-  border-color: #0000ff transparent transparent transparent;
-}
-
-.colorWheel2 span.color08 {
-  -webkit-transform: rotate(252deg);
-  -moz-transform: rotate(252deg);
-  -ms-transform: rotate(252deg);
-  -o-transform: rotate(252deg);
-  transform: rotate(252deg);
-  border-color: #da70d6 transparent transparent transparent;
-}
-
-.colorWheel2 span.color09 {
-  -webkit-transform: rotate(288deg);
-  -moz-transform: rotate(288deg);
-  -ms-transform: rotate(288deg);
-  -o-transform: rotate(288deg);
-  transform: rotate(288deg);
-  border-color: #98fb98 transparent transparent transparent;
-}
-
-.colorWheel2 span.color10 {
-  -webkit-transform: rotate(324deg);
-  -moz-transform: rotate(324deg);
-  -ms-transform: rotate(324deg);
-  -o-transform: rotate(324deg);
-  transform: rotate(324deg);
-  border-color: #4f7942  transparent transparent transparent;
-  /*fern green*/
-}
-
-.colorWheel2:before {
-  content: "";
-  width: 300px;
-  height: 300px;
-  overflow: hidden;
-  position: absolute;
-  top: -30px;
-  left: -130px;
-  border-radius: 100%;
-  border: 30px solid #ffffff;
-  z-index: 100;
-}
-
-.colorWheel2:after {
-  content: "";
-  width: 100px;
-  height: 100px;
-  overflow: hidden;
-  position: absolute;
-  top: 100px;
-  left: 0px;
-  border-radius: 100%;
-  background: #ffffff;
-}
-
-.colorWheel3 {
-  height: 600px;
-  width: 300px;
-  margin: 0 auto;
-  position: relative;
-  -webkit-transform-origin: 50px 150px;
-  -moz-transform-origin: 50px 150px;
-  -ms-transform-origin: 50px 150px;
-  -o-transform-origin: 50px 150px;
-  transform-origin: 50px 150px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-  animation: spin 5s infinite linear;
-
-}
-.colorWheel3 span {
-  position: absolute;
-
-  border-style: solid;
-  border-width: 150px 50px;
-  box-sizing: border-box;
-}
-
-.colorWheel3 span.color01 {
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  border-color: #1c39bb transparent transparent transparent;
-}
-
-.colorWheel3 span.color02 {
-  -webkit-transform: rotate(36deg);
-  -moz-transform: rotate(36deg);
-  -ms-transform: rotate(36deg);
-  -o-transform: rotate(36deg);
-  transform: rotate(36deg);
-  border-color: #b0e0e6 transparent transparent transparent;
-}
-
-.colorWheel3 span.color03 {
-  -webkit-transform: rotate(72deg);
-  -moz-transform: rotate(72deg);
-  -ms-transform: rotate(72deg);
-  -o-transform: rotate(72deg);
-  transform: rotate(72deg);
-  border-color: #4169e1 transparent transparent transparent;
-}
-
-.colorWheel3 span.color04 {
-  -webkit-transform: rotate(108deg);
-  -moz-transform: rotate(108deg);
-  -ms-transform: rotate(108deg);
-  -o-transform: rotate(108deg);
-  transform: rotate(108deg);
-  border-color:  #0f52ba transparent transparent transparent;
-}
-
-.colorWheel3 span.color05 {
-  -webkit-transform: rotate(144deg);
-  -moz-transform: rotate(144deg);
-  -ms-transform: rotate(144deg);
-  -o-transform: rotate(144deg);
-  transform: rotate(144deg);
-  border-color: #afeeee transparent transparent transparent;
-  /*soft blue*/
-}
-
-.colorWheel3 span.color06 {
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  transform: rotate(180deg);
-  border-color: #87ceeb transparent transparent transparent;
-}
-
-.colorWheel3 span.color07 {
-  -webkit-transform: rotate(216deg);
-  -moz-transform: rotate(216deg);
-  -ms-transform: rotate(216deg);
-  -o-transform: rotate(216deg);
-  transform: rotate(216deg);
-  border-color: #008080 transparent transparent transparent;
-}
-
-.colorWheel3 span.color08 {
-  -webkit-transform: rotate(252deg);
-  -moz-transform: rotate(252deg);
-  -ms-transform: rotate(252deg);
-  -o-transform: rotate(252deg);
-  transform: rotate(252deg);
-  border-color: #40e0d0 transparent transparent transparent;
-}
-
-.colorWheel3 span.color09 {
-  -webkit-transform: rotate(288deg);
-  -moz-transform: rotate(288deg);
-  -ms-transform: rotate(288deg);
-  -o-transform: rotate(288deg);
-  transform: rotate(288deg);
-  border-color: #ee82ee transparent transparent transparent;
-}
-
-.colorWheel3 span.color10 {
-  -webkit-transform: rotate(324deg);
-  -moz-transform: rotate(324deg);
-  -ms-transform: rotate(324deg);
-  -o-transform: rotate(324deg);
-  transform: rotate(324deg);
-  border-color: #0014A8 transparent transparent transparent;
-}
-
-.colorWheel3:before {
-  content: "";
-  width: 300px;
-  height: 300px;
-  overflow: hidden;
-  position: absolute;
-  top: -30px;
-  left: -130px;
-  border-radius: 100%;
-  border: 30px solid #ffffff;
-  z-index: 100;
-}
-
-.colorWheel3:after {
-  content: "";
-  width: 100px;
-  height: 100px;
-  overflow: hidden;
-  position: absolute;
-  top: 100px;
-  left: 0px;
-  border-radius: 100%;
-  background: #ffffff;
-}
-
-@keyframes spin {
-    
-    to {
-      transform: rotate(180deg);
-
-    }
-
-
-
-
+            }
 
 
-
-		
-</style>
+    </style>
 </head>
 
 <body>
 
+   
 
-  
-
-	 <a href="pages/colorWheel.html"><div class="colorWheel">
-  <span class="point color01"></span>
-  <span class="point color02"></span>
-  <span class="point color03"></span>
-  <span class="point color04"></span>
-  <span class="point color05"></span>
-  <span class="point color06"></span>
-  <span class="point color07"></span>
-  <span class="point color08"></span>
-  <span class="point color09"></span>
-  <span class="point color10"></span>
-</div> </a>
+    <h1> Color Imagery</h1>
 
 
+<div class= "parent">
+
+    <a href="pages/colorWheel.html">
+        <div class="colorWheel">
+            <span class="point color01"></span>
+            <span class="point color02"></span>
+            <span class="point color03"></span>
+            <span class="point color04"></span>
+            <span class="point color05"></span>
+            <span class="point color06"></span>
+            <span class="point color07"></span>
+            <span class="point color08"></span>
+            <span class="point color09"></span>
+            <span class="point color10"></span>
+        </div>
+    </a>
+
+   
+
+    <a href="pages/colorWheel2.html">
+        <div class="colorWheel2">
+            <span class="point color01"></span>
+            <span class="point color02"></span>
+            <span class="point color03"></span>
+            <span class="point color04"></span>
+            <span class="point color05"></span>
+            <span class="point color06"></span>
+            <span class="point color07"></span>
+            <span class="point color08"></span>
+            <span class="point color09"></span>
+            <span class="point color10"></span>
+        </div>
+    </a>
+
+        <a href="pages/colorWheel3.html">
+            <div class="colorWheel3">
+                <span class="point color01"></span>
+                <span class="point color02"></span>
+                <span class="point color03"></span>
+                <span class="point color04"></span>
+                <span class="point color05"></span>
+                <span class="point color06"></span>
+                <span class="point color07"></span>
+                <span class="point color08"></span>
+                <span class="point color09"></span>
+                <span class="point color10"></span>
+            </div>
+        </a>
+
+    </div>
+
+         <h1> Color Imagery</h1>
 
 
 
-
-
-  <a href="pages/colorWheel2.html"><div class="colorWheel2">
-  <span class="point color01"></span>
-  <span class="point color02"></span>
-  <span class="point color03"></span>
-  <span class="point color04"></span>
-  <span class="point color05"></span>
-  <span class="point color06"></span>
-  <span class="point color07"></span>
-  <span class="point color08"></span>
-  <span class="point color09"></span>
-  <span class="point color10"></span>
-</div>
-
-
-
- <a href="pages/colorWheel3.html"><div class="colorWheel3">
-  <span class="point color01"></span>
-  <span class="point color02"></span>
-  <span class="point color03"></span>
-  <span class="point color04"></span>
-  <span class="point color05"></span>
-  <span class="point color06"></span>
-  <span class="point color07"></span>
-  <span class="point color08"></span>
-  <span class="point color09"></span>
-  <span class="point color10"></span>
-</div>
-
-
-<script>
-  
-</script>
-
-
-	
+            <script>
+            </script>
 
 </body>
 
