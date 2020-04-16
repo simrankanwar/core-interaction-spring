@@ -1,0 +1,122 @@
+         body{
+			margin:auto;
+		    background-color: #FF6F61;
+		    font-family:Rockwell ;
+		    color:white;
+		    text-align:center;
+
+		}
+
+		h1{
+		   font-family:futura ;
+		   color:white;
+		   text-align:center;
+		   font-size:50px;
+
+		}
+
+		p{
+		   font-family:garamound ;
+		   color:white;
+		   text-align:center;
+		   font-size:50px;
+
+		}
+
+		.color{
+		  color:#FFBDE7;
+     	  font-weight:bold;
+     	  font-size:30px;
+
+
+		}
+
+		ol,ul{
+			 text-align: center;
+             list-style: inside;
+
+		}
+
+       a {
+          color:white;
+          background-color: transparent;
+          text-decoration: none;
+         }
+
+         a:hover {
+          color: #845EC2;
+          background-color: transparent;
+  }
+
+      
+
+
+     @media only screen
+     and (min-device-width:867px)
+     
+
+     {
+
+     .grid-image-laptop{background-image:url(“/images/1.gif”);display:block; }
+
+
+     .grid-image-phone{background-image:url(“/images/2.gif”);display:none; }
+
+
+
+
+     }
+
+     .laptop-one {
+     	display:block;
+     }
+
+     .phone-one {
+     	display:none;
+     }
+
+  
+
+
+		@media only screen
+      and (min-device-width:375px)
+      and (max-device-width:812px)
+
+
+ {
+
+        body{
+    
+        background-color:#16B587;
+        font-family:Rockwell;
+
+        }
+
+        .color{
+		  color:#E1EA87;
+
+		}
+
+         a:hover {
+          color: #2C73D2;
+          background-color: transparent;
+  }
+
+     
+     .grid-image-laptop { background-image:url(“/images/1.gif”); display:none; }
+
+
+     .grid-image-phone { background-image:url(“/images/2.gif”); display:block; }
+
+     
+
+     .laptop-one {
+     	display:none;
+     }
+
+     .phone-one {
+     	display:block;
+     }
+
+
+    

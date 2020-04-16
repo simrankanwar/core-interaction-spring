@@ -1,0 +1,69 @@
+     body{
+			margin:auto;
+		    background-color: #FF6F61;
+		    font-family:Rockwell ;
+		    color:white;
+		    text-align:center;
+
+		}
+
+    .container{
+      width:80%;
+      max-width: 1000px;
+      margin:50px auto;
+    }
+
+    .box{
+     width:200px;
+     height:200px;
+   
+     background-color:lightcoral;
+     margin:10px;
+      
+    }
+
+    main{
+      display:flex;
+    }
+
+			@media only screen
+      and (min-device-width:375px)
+    
+
+
+ {
+
+        body{
+    
+        background-color:#16B587;
+        font-family:Rockwell;
+
+        }
+
+        @media only screen
+      and (min-device-width:1024px)
+
+      
+
+  {
+      body{
+    
+        background-color:#FF6F61;
+        font-family:Rockwell;
+        font-size:20px;
+
+        }
+  
+
+   @media only screen
+      and (min-device-width:1440px)
+
+  {
+      body{
+    
+        background-color:#C493FF;
+        font-family:Rockwell;
+        font-size:20px;
+
+        }
+  }
