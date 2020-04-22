@@ -1,9 +1,10 @@
          body{
-			margin:auto;
+			  margin:auto;
 		    background-color: #FF6F61;
 		    font-family:Rockwell ;
 		    color:white;
 		    text-align:center;
+         cursor: url("images/cursor.png"), auto;
 
 		}
 
@@ -33,7 +34,7 @@
 
 		ol,ul{
 			 text-align: center;
-             list-style: inside;
+             list-style: none;
 
 		}
 
@@ -48,6 +49,8 @@
           background-color: transparent;
   }
 
+
+
       
 
 
@@ -56,6 +59,16 @@
      
 
      {
+
+      body{
+        font-size:20px;
+        font-family:Rockwell;
+
+        border-color: #FFA0BC;
+      }
+
+     
+
 
      .grid-image-laptop{background-image:url(“/images/1.gif”);display:block; }
 
@@ -93,14 +106,19 @@
         }
 
         .color{
-		  color:#E1EA87;
+		    color:#E1EA87;
 
 		}
 
          a:hover {
           color: #2C73D2;
           background-color: transparent;
+          text-decoration: underline;
   }
+
+         a{
+          text-decoration: underline;
+         }
 
      
      .grid-image-laptop { background-image:url(“/images/1.gif”); display:none; }
