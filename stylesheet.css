@@ -1,5 +1,6 @@
       h1{
 			font-family:futura;
+			color:#FF9671;
 		
 			text-align:center; 
 
@@ -10,44 +11,45 @@
                    text-align:center; 
                     font-size:20px;
                     text-align:center;
+                    color:#FF9671;
                  
 }
 
 		p{
 			
 			font-family:futura;
-			background-color: #cce6ff; 
-			font-size:25px;
+			background-color: #FF9671; 
+			font-size:23px;
+			color:#FFC75F;
 			
 		}
 
 
 		li{
 			font-family: antique olive;
-			font-size: 30px;
-
-
-		}
+			font-size: 20px;
+			color:#FF9671;
+		 }
 	html,body{
-		height:200%;
+		height:110%;
 	}
 
 	body{
 		
 		margin:0;
        border: 100px solid white;
-       background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);;
+       background: #FFC75F;
 
 	}
 
 	a:hover {
-  color: black;
+  color: #FF9671;
 }
 
 a{
 	font-family: antique olive;
 	color:white;
-	font-size: 30px;
+	font-size: 20px;
 
 }
 
